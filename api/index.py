@@ -746,5 +746,5 @@ def loan_recommend():
     return render_template("loan_result.html", recommendations=recommendations)
 
 
-#if __name__ == '__main__':
-#    app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
