@@ -6,7 +6,7 @@ import logging
 import os
 import pdfkit
 from flask import make_response
-app = Flask(__name__)
+app = Flask(__name__, template_folder='../templates', static_folder='../static')
 
 
 
@@ -746,5 +746,3 @@ def loan_recommend():
     return render_template("loan_result.html", recommendations=recommendations)
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
